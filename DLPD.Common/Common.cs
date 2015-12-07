@@ -4,7 +4,7 @@ using System.Collections;
 using IronRuby;
 using System.Text;
 
-namespace Constant {
+namespace DLPD.Common {
 	/// <summary>
 	/// 自然质量分
 	/// </summary>
@@ -215,8 +215,36 @@ namespace Constant {
 			get{ return lyxs; }
 			set{ lyxs = value; }
 		}
+
+        double gjlydzs;
+        /// <summary>
+        ///国家利用等指数
+        /// </summary>
+        public double GJLYDZS {
+            get {
+                return gjlydzs;
+            }
+            set {
+                gjlydzs = value;
+            }
+        }
+
+        int gjlydb;
+        /// <summary>
+        /// 国家利用等
+        /// </summary>
+        public int GJLYDB {
+            get {
+                return gjlydb;
+            }
+            set {
+                gjlydb = value;
+            }
+        } 
+
+
 		/// <summary>
-		/// 国家级利用等指数
+		/// 国家级利用等指数计算
 		/// </summary>
 		/// <returns>The GJLYDZ.</returns>
 		public double ToGJLYDZS(){
@@ -224,20 +252,17 @@ namespace Constant {
 			return lydzs;
 		}
 		/// <summary>
-		/// 国家级利用等级
+		/// 国家级利用等级计算
 		/// </summary>
 		/// <returns>The GJLYD.</returns>
 		public int ToGJLYDB(){
 			int gjtydb=0;
 			var rubyEngine = Ruby.CreateEngine();
-			rubyEngine.ExecuteFile("");
+            rubyEngine.ExecuteFile(Constant.GJLYDB);
 			dynamic ruby = rubyEngine.Runtime.Globals;
-
-			dynamic config = ruby.Config.@new();
-			//ouble gjlydzs = ToGJLYDZS();
-			//jtydb = config.getGJLYDB(gjlydzs);
-
-
+			dynamic config = ruby.GJLYDB.@new();
+			double gjlydzs = this.ToGJLYDZS();
+			gjtydb = config.getGJLYDB(gjlydzs);
 			return gjtydb;
 		}
 		

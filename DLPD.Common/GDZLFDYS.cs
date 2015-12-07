@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Constant
+namespace DLPD.Common
 {
 	/// <summary>
 	/// 耕地质量分等因素
