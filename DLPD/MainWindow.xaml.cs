@@ -20,9 +20,16 @@ namespace DLPD {
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
     public partial class MainWindow : Window {
+        List<BaseInfo> bis = ConfigHelper.BaseInfoRead();
         public MainWindow() {
             InitializeComponent();
-            GDZLDJ ds = ConfigHelper.DataBaseRead(2);
+            //GDZLDJ ds = ConfigHelper.DataBaseRead(2);
+            ConfigHelper.WeightRead(true, "55~70");
+            this.Loaded += MainWindow_Loaded;
+        }
+
+        void MainWindow_Loaded(object sender, RoutedEventArgs e) {
+            dgdBaseInfo.ItemsSource = bis;
         }
     }
 }

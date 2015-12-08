@@ -3,6 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid HorizontalAlignment="Left"  Margin="10,10,0,10" Width="Auto">
+            <DataGrid x:Name="dgdBaseInfo" Height="Auto" VerticalAlignment="Stretch" Width="Auto" Margin="0,0,0,0" AutoGenerateColumns="False"  HorizontalAlignment="Center" FontSize="16">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="code" Header="字段代码"  Binding="{Binding FieldCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*" IsReadOnly="True" />
+                    <DataGridTextColumn x:Name="name" Header="字段名称"  Binding="{Binding FieldName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="2*" IsReadOnly="True" />
+                    <DataGridTextColumn x:Name="summary" Header="字段内容"  Binding="{Binding FieldSummary, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="2*" />                    
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
     </Grid>
 </Window>
