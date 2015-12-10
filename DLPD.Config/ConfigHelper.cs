@@ -8,6 +8,7 @@ using DotSpatial.Data;
 using System.Data.OleDb;
 using System.Data;
 using System.Xml.Linq;
+using System.Collections;
 
 namespace DLPD.Config {
     public class ConfigHelper {
@@ -59,11 +60,15 @@ namespace DLPD.Config {
         public static int WeightRead(bool type,string keyword) {
             int mark = 0;
             if(type) {//水田
-                WeithtWaterRead(keyword);   
+                mark=WeithtWaterRead(keyword);   
             }
             return mark;
         }
-
+        /// <summary>
+        /// 水田权重
+        /// </summary>
+        /// <param name="keyword"></param>
+        /// <returns></returns>
         private static int WeithtWaterRead(string keyword) {
             int mark = 0;
             XElement weightconfig = XElement.Load(Constant.WeightConfig);
@@ -74,9 +79,43 @@ namespace DLPD.Config {
                     mark =Int32.Parse(el.Attribute("Mark").Value.ToString());
                     break;
                 }
-            }
-                     
+            }                     
             return mark;
         }
+        /// <summary>
+        /// 获取自然质量分类型
+        /// </summary>
+        /// <returns></returns>
+        public static Hashtable ZRZLFRead() {
+            Hashtable types = new  Hashtable();
+            XElement weightconfig = XElement.Load(Constant.WeightConfig);
+            IEnumerable<XElement> els = from el in weightconfig.Elements("Type")
+                                        select el;
+            foreach(XElement el in els) {
+                List<string> names=new List<string>();
+                string name=el.Attribute("Name").Value;
+                foreach(XElement e in el.Elements()) {
+                    names.Add(e.Attribute("Summary").Value);
+                }
+                types.Add(name,names);
+            }
+            return types;
+        }
+        ///// <summary>
+        ///// 自然质量分分等因素读取
+        ///// </summary>
+        ///// <returns></returns>
+        //public static List<string> FDYSRead(string type) {
+        //    List<string> types = new List<string>();
+        //    XElement weightconfig = XElement.Load(Constant.WeightConfig);
+        //    IEnumerable<XElement> els = from el in weightconfig.Elements("Type").Elements()
+        //                                where el.
+        //                                select el;
+        //    foreach(XElement el in els) {
+        //        //types.Add(el.Attribute("Summary").Value);
+        //    }
+        //    return types;
+
+        //}
     }
 }

@@ -62,6 +62,7 @@
     <Compile Include="Constant.cs" />
     <Compile Include="GDZLFDYS.cs" />
     <Compile Include="Methods.cs" />
+    <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
