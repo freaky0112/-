@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -53,9 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Delegate\DelegateControls.cs" />
+    <Compile Include="Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZLPD.xaml.cs">
       <DependentUpon>ZLPD.xaml</DependentUpon>
     </Compile>
+    <Page Include="Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -91,6 +101,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Interface\GJLYDB.rb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -108,6 +119,10 @@
     <ProjectReference Include="..\DLPD.Config\DLPD.Config.csproj">
       <Project>{f088f4db-6d61-4a8b-b8f8-489b242db0a9}</Project>
       <Name>DLPD.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLPD.Spatial\DLPD.Spatial.csproj">
+      <Project>{9b285844-6eb9-4b32-9582-08b7deae8e3b}</Project>
+      <Name>DLPD.Spatial</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

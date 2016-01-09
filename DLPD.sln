@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLPD", "DLPD\DLPD.csproj", "{5AE7F1A8-7476-4E6B-8363-3DF7F6135611}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLPD.Config", "DLPD.Config\DLPD.Config.csproj", "{F088F4DB-6D61-4A8B-B8F8-489B242DB0A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLPD.Common", "DLPD.Common\DLPD.Common.csproj", "{99987300-B0F0-4D78-AB2A-AF52D68E9E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLPD.Spatial", "DLPD.Spatial\DLPD.Spatial.csproj", "{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,18 @@ Global
 		{99987300-B0F0-4D78-AB2A-AF52D68E9E88}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{99987300-B0F0-4D78-AB2A-AF52D68E9E88}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{99987300-B0F0-4D78-AB2A-AF52D68E9E88}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Debug|x86.Build.0 = Debug|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B285844-6EB9-4B32-9582-08B7DEAE8E3B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

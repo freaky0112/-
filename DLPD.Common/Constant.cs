@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,5 +40,9 @@ namespace DLPD.Common {
             /// </summary>
             type1=1
         };
+        /// <summary>
+        /// 自然质量分对应关系表
+        /// </summary>
+        public static Hashtable ZRZLFSheet = new Hashtable();
     }
 }

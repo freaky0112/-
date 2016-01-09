@@ -101,6 +101,30 @@ namespace DLPD.Config {
             }
             return types;
         }
+
+
+        /// <summary>
+        /// 自然质量分评价对应分数
+        /// </summary>
+        /// <returns></returns>
+        public static Hashtable ZRZLFMarkRead() {
+            Hashtable types = new Hashtable();
+            XElement weightconfig = XElement.Load(Constant.WeightConfig);
+            IEnumerable<XElement> els = from el in weightconfig.Elements("Type")
+                                        select el;
+            foreach (XElement el in els) {
+                //List<string> names = new List<string>();
+                //string name = el.Attribute("Name").Value;
+                foreach (XElement e in el.Elements()) {
+                    string key=e.Attribute("Summary").Value;
+                    double mark =double.Parse(e.Attribute("Mark").Value);
+                    types.Add(key  ,mark);
+                }
+            }
+            return types;
+        }
+
+
         ///// <summary>
         ///// 自然质量分分等因素读取
         ///// </summary>

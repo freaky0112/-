@@ -1,18 +1,9 @@
 ﻿using DLPD.Common;
 using DLPD.Config;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace DLPD {
     /// <summary>
@@ -28,6 +19,8 @@ namespace DLPD {
         void ZLPD_Loaded(object sender, RoutedEventArgs e) {
             int margin = 10;
             Hashtable hs=ConfigHelper.ZRZLFRead();
+            //DotSpatial.Projections.Forms.DoubleBox db = new DotSpatial.Projections.Forms.DoubleBox();
+            //grdMain.Children.Add(db);
             foreach(string name in hs.Keys) {
                 DockPanel dp = new DockPanel();
                 dp.LastChildFill = true;
@@ -64,7 +57,7 @@ namespace DLPD {
         ComboBox ComboBox_Generator(List<string> names, int margin) {
             ComboBox cbx = new ComboBox();
             cbx.ItemsSource = names;
-            cbx.Text = cbx.SelectedItem.ToString();
+            //cbx.Text = cbx.SelectedItem.ToString();
             cbx.Height = 60;
             //cbx.Margin = new Thickness(200, margin, 0, 0);
             //cbx.HorizontalAlignment = HorizontalAlignment.Right;

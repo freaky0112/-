@@ -14,42 +14,42 @@
   </Type>
   <Type Name="土壤质地">
     <Weight Mark="100" Summary="壤土"/>
-    <Weight Mark="90" Summary="粉砂壤土，粘壤土"/>
-    <Weight Mark="80" Summary="壤粘土，砂壤土"/>
+    <Weight Mark="90" Summary="粉砂壤土\粘壤土"/>
+    <Weight Mark="80" Summary="壤粘土\砂壤土"/>
     <Weight Mark="60" Summary="粘土"/>
     <Weight Mark="40" Summary="砂土"/>
   </Type>
   <Type Name="耕层厚度">
     <Weight Mark="100" Summary="≥20"/>
-    <Weight Mark="95" Summary="18～20"/>
-    <Weight Mark="90" Summary="15～18"/>
-    <Weight Mark="70" Summary="10～15"/>
+    <Weight Mark="95" Summary="18~20"/>
+    <Weight Mark="90" Summary="15~18"/>
+    <Weight Mark="70" Summary="10~15"/>
     <Weight Mark="50" Summary="＜10"/>
   </Type>
   <Type Name="有机质含量">
     <Weight Mark="100" Summary="≥3.0"/>
-    <Weight Mark="90" Summary="2.5～3.0"/>
-    <Weight Mark="80" Summary="2.0～2.5"/>
-    <Weight Mark="70" Summary="1.5～2.0"/>
-    <Weight Mark="60" Summary="1.0～1.5"/>
-    <Weight Mark="40" Summary="0.5～1.0"/>
+    <Weight Mark="90" Summary="2.5~3.0"/>
+    <Weight Mark="80" Summary="2.0~2.5"/>
+    <Weight Mark="70" Summary="1.5~2.0"/>
+    <Weight Mark="60" Summary="1.0~1.5"/>
+    <Weight Mark="40" Summary="0.5~1.0"/>
     <Weight Mark="20" Summary="＜0.5"/>
   </Type>
   <Type Name="灌溉保证率">
     <Weight Mark="100" Summary="≥85"/>
     <Weight Mark="90" Summary="70~85"/>
-    <Weight Mark="70" Summary="55~70"/>
-    <Weight Mark="50" Summary="40~55"/>
-    <Weight Mark="30" Summary="＜40"/>
+    <Weight Mark="70" Summary="50~70"/>
+    <Weight Mark="50" Summary="30~50"/>
+    <Weight Mark="30" Summary="＜30"/>
   </Type>
   <Type Name="海拔">
     <Weight Mark="100" Summary="≤10"/>
-    <Weight Mark="95" Summary="10～50"/>
-    <Weight Mark="90" Summary="50～150"/>
-    <Weight Mark="80" Summary="150～300"/>
-    <Weight Mark="70" Summary="300～500"/>
-    <Weight Mark="50" Summary="500～800"/>
-    <Weight Mark="30" Summary="800～1000"/>
-    <Weight Mark="10" Summary="＞1000"/>
+    <Weight Mark="95" Summary="10~50"/>
+    <Weight Mark="90" Summary="50~150"/>
+    <Weight Mark="80" Summary="150~300"/>
+    <Weight Mark="70" Summary="300~500"/>
+    <Weight Mark="50" Summary="500~800"/>
+    <Weight Mark="30" Summary="800~1000"/>
+    <Weight Mark="10" Summary="≥1000"/>
   </Type>
 </WeightConfig>
