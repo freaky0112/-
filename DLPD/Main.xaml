@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DLPD"
         mc:Ignorable="d"
-        Title="Main" Height="300" Width="300">
+        Title="Main" Height="418.13" Width="505.666">
     <Grid>
-        <DataGrid x:Name="dtGrid" Margin="10,68,10,30" RenderTransformOrigin="-3.65,-3.732" Visibility="Visible" ClipboardCopyMode="IncludeHeader">        </DataGrid>
-        <Grid HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="272">
+        <DataGrid x:Name="dtGrid" Margin="10,68,10,30" RenderTransformOrigin="-3.65,-3.732" Visibility="Visible" ClipboardCopyMode="IncludeHeader" SelectionChanged="dtGrid_SelectionChanged"></DataGrid>
+        <Grid Height="53" Margin="10,10,10,0" VerticalAlignment="Top">
             <Button x:Name="btnimport"  Content="底图数据导入" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,10,0,0" VerticalAlignment="Top" Width="Auto" Click="btnimport_Click"/>
             <Button x:Name="btnCalculate" Content="理论最高值计算" HorizontalAlignment="Left" Margin="91,10,0,0" VerticalAlignment="Top" Width="Auto" Click="btnCalculate_Click" />
+            <Button x:Name="binImportNew" Content="新图层数据导入" HorizontalAlignment="Left" Margin="187,10,0,0" VerticalAlignment="Top" Width="75" Click="binImportNew_Click"/>
 
         </Grid>
         <Label x:Name="lblProgess" Content="" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="Auto"/>
-        <ProgressBar x:Name="pgbCalculate" Height="10" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="Auto"  />
+        <ProgressBar x:Name="pgbCalculate" Height="10" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="Auto"  Visibility="Hidden"/>
 
     </Grid>
 </Window>
