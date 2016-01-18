@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DLPD.Common.ZRZLF">
+    <Position X="6" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAUAAAAFAQkAAAEBEAAAABAAAAAAAAAAIAAAADA=</HashCode>
+      <FileName>Common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.GDZLDJ">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAAAgAAgAQCAQAAAEAAAYAAAASCQGAAAIEIAQAAAEA=</HashCode>
+      <FileName>Common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.GDZLFDYS">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAgAAAAAAAQAACAEAAAgAACAAAAAgAA=</HashCode>
+      <FileName>GDZLFDYS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.TRZD" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GDZLFDYS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.GCHD" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GDZLFDYS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.TKZK" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GDZLFDYS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.YJZHL" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GDZLFDYS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.TJDLTJ" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GDZLFDYS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.GGBZL" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GDZLFDYS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLPD.Common.HB" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GDZLFDYS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
