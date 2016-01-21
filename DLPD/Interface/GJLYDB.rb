@@ -25,21 +25,6 @@ class GJLYDB
 		end
 		return -1
 	end
-
-	def getZRDB(zs)
-		list=[LV1,LV2,LV3,LV4,LV5,LV6,LV7,LV8,LV9,LV10,LV11,LV12,LV13,LV14,LV15]
-		i=0
-		while zs>0
-			list[i]=list[i].min*2..list[i].max*2
-			if (list[i]).include?(zs)				
-				return i+1
-			end
-			puts list[i]
-			i+=1
-		end
-		return -1
-	end
-
 end
 # result=GJLYDB.new();
 # puts result.getGJLYDB(1333)
